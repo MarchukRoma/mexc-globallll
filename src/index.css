@@ -1,0 +1,200 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: white;
+}
+
+body {
+  margin: 0, 0;
+  display: flex;
+  place-items: center;
+  /* min-width: 320px; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center; /* Вирівнювання по вертикалі */
+  flex-direction: column;
+  height: 100vh; /* Або іншої висоти батьківського контейнера */
+}
+#ownerImg {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+#headerImg {
+  width: 100%;
+}
+#ownerName {
+  display: flex;
+  flex-direction: row;
+}
+
+#tick {
+  height: 30px;
+}
+
+.foot {
+  display: flex;
+  /* justify-content: space-around; Вирівнює блоки зображення та тексту по горизонталі */
+  padding: 0;
+  padding-top: 35px;
+  /* background-color: #f8f8f8; Наприклад, фон для footer */
+  background-color: white;
+  gap: 60px;
+  /* padding-left: 25%; */
+
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+.footer_element {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує зображення та текст по горизонталі */
+}
+
+.footer_img {
+  margin-bottom: 10px; /* Додає відступ між зображенням і текстом */
+  /* height: auto; Зберігає пропорції зображення */
+  width: 40px;
+  height: 40px;
+}
+
+.footer_element p {
+  color: #005baa;
+  font-size: 10px;
+}
+
+.input-container {
+  /* max-width: 70; */
+  margin-left: 25px;
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+}
+h1 {
+  font-size: 24px;
+}
+
+.input-container {
+  position: relative;
+  width: 85%;
+}
+
+input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 25px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding-right: 50px; /* Щоб залишити місце для зображення */
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #aaa;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input:focus + .input-label,
+input:not(:placeholder-shown) + .input-label {
+  top: -10px;
+  font-size: 17px;
+  font-family: Arial;
+  color: #333;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.flag-container {
+  position: absolute;
+  right: 5px; /* Можна змінити за потреби */
+  margin-top: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* border-radius: 50%; */
+  overflow: hidden; /* Щоб зображення не виходило за межі контейнера */
+}
+
+.flag-image {
+  width: 33px; /* Розмір зображення, можна змінити */
+  height: 33px; /* Розмір зображення, можна змінити */
+  /* object-fit: cover;  */
+}
+
+#submit_Btn {
+  background-color: #005baa;
+  color: white;
+  margin-top: 35px;
+  /* margin-bottom: 100px; */
+  width: 85%;
+  padding: 15px;
+  margin-left: 25px;
+  font-size: 20px;
+  box-sizing: border-box;
+}

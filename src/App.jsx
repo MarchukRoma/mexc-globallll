@@ -18,6 +18,7 @@ const UILabels = [
     infoLabel: "información",
     scheduleLabel: "Horario",
   },
+
   {
     country: "Colombia",
     ownerLabel: "Santiago Ruiz",
@@ -31,6 +32,7 @@ const UILabels = [
     infoLabel: "información",
     scheduleLabel: "Horario",
   },
+
   {
     country: "Argentina",
     ownerLabel: "Sebastian Gonzalez",
@@ -40,6 +42,19 @@ const UILabels = [
     buttonLabel: "Retirada de fondos",
     clickMessage:
       "Estimado cliente, para retirar fondos necesita pagar 250.000 ARS para activar la cuenta de retiro que especificó. Una vez realizado el pago, el retiro a su cuenta especificada estará disponible.",
+    geoLabel: "Cajeros automáticos",
+    infoLabel: "información",
+    scheduleLabel: "Horario",
+  },
+  {
+    country: "Ecuador",
+    ownerLabel: "Santiago Ruiz",
+    importLabel: "Importe",
+    currencyLabel: "Pessos mexicanos",
+    accountNumberLabel: "Número de cuenta",
+    buttonLabel: "Retirada de fondos",
+    clickMessage:
+      "Estimado cliente, para retirar fondos necesita pagar 150 USD para activar la cuenta de retiro que especificó. Una vez realizado el pago, el retiro a su cuenta especificada estará disponible.",
     geoLabel: "Cajeros automáticos",
     infoLabel: "información",
     scheduleLabel: "Horario",
